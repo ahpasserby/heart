@@ -1,0 +1,51 @@
+﻿body{margin:0;padding:0;background:#ffe;font-size:14px;font-family:'微软雅黑','宋体',sans-serif;color:#231F20;overflow:auto}
+a {color:#000;font-size:14px;}
+#main{width:100%;}
+#wrap{position:relative;margin:0 auto;width:1100px;height:680px;margin-top:10px;}
+#text{width:400px;height:450px;left:140px;top:52px;position:absolute;}
+#code{display:none;font-size:16px;}
+#clock-box {position:absolute;left:60px;top:560px;font-size:28px;display:none;}
+#clock-box a {font-size:28px;text-decoration:none;}
+#clock{margin-left:48px;}
+#clock .digit {font-size:64px;}
+#canvas{margin:0 auto;width:1100px;height:680px;}
+#error{margin:0 auto;text-align:center;margin-top:60px;display:none;}
+.hand{cursor:pointer;}
+.say{margin-left:-86px;}
+.space{margin-right:150px;}
+
+/* 双语文本样式 */
+.bilingual {
+    margin-bottom: 3px;
+    line-height: 1.1;
+}
+
+.english-large {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-bottom: 1px;
+    line-height: 1;
+    letter-spacing: -0.5px;
+}
+
+.chinese-small {
+    font-size: 14px;
+    color: #666;
+    display: block;
+    font-style: italic;
+    margin-left: 5px;
+    line-height: 1;
+    letter-spacing: -0.3px;
+}
+
+
+/* 调整文本容器高度以适应更多内容 */
+#text {
+    width: 400px;
+    height: 450px;  /* 从425px增加到450px */
+    left: 140px;
+    top: 52px;
+    position: absolute;
+}

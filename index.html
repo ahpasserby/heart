@@ -1,0 +1,293 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>❤CLOVER❤SARZN❤</title>
+		<link type="text/css" rel="stylesheet" href="./renxi/default.css">
+		<script type="text/javascript" src="./renxi/jquery.min.js"></script>
+		<script type="text/javascript" src="./renxi/jscex.min.js"></script>
+		<script type="text/javascript" src="./renxi/jscex-parser.js"></script>
+		<script type="text/javascript" src="./renxi/jscex-jit.js"></script>
+		<script type="text/javascript" src="./renxi/jscex-builderbase.min.js"></script>
+		<script type="text/javascript" src="./renxi/jscex-async.min.js"></script>
+		<script type="text/javascript" src="./renxi/jscex-async-powerpack.min.js"></script>
+		<script type="text/javascript" src="./renxi/functions.js" charset="utf-8"></script>
+		<script type="text/javascript" src="./renxi/love.js" charset="utf-8"></script>
+		<style type="text/css"></style>
+		<script>
+			var str;
+			str = prompt("请输入你的名字缩写,有惊喜！");
+			console.log(str);
+			
+			// 流氓逻辑函数
+			function askMasterQuestion(attempts) {
+				if (attempts > 3) {
+					// 超过3次机会，显示叛逆信息
+					alert("不和你玩了，你今天格外叛逆");
+					return;
+				}
+				
+				var isMaster = confirm("张赫俊是不是主人？\n\n请选择：\n确定 = 是\n取消 = 不是");
+				
+				if (isMaster) {
+					// 选择是，显示主页面
+					var all = document.getElementsByClassName("ai"); //返回的是数组
+					for (var i = 0; i < all.length; i++) {
+						all[i].innerHTML = str;
+					}
+					document.getElementById("main").style.display = "block";
+				} else {
+					// 选择不是，显示错误信息
+					alert("回答错误");
+					setTimeout(function() {
+						var remainingAttempts = 3 - attempts;
+						if (remainingAttempts > 0) {
+							alert("再给你" + remainingAttempts + "次机会");
+						} else {
+							alert("你已经没有机会了");
+						}
+						setTimeout(function() {
+							askMasterQuestion(attempts + 1);
+						}, 200); // 改为0.2秒
+					}, 200); // 改为0.2秒
+				}
+			}
+			
+			window.onload = function() {
+				if (str != null && str !="") {
+					// 将输入转换为小写进行不区分大小写的比较
+					var lowerStr = str.toLowerCase();
+					if (lowerStr === "肖雨菲" || lowerStr === "xyf" || lowerStr === "clover") {
+						// 密码正确，开始流氓逻辑
+						setTimeout(function() {
+							askMasterQuestion(1);
+						}, 500);
+					} else {
+						// 密码错误，显示错误信息
+						document.getElementById("main").style.display = "none";
+						// 创建错误信息显示区域
+						var errorDiv = document.createElement("div");
+						errorDiv.id = "password-error";
+						errorDiv.style.cssText = "position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 24px; color: #ff0000; text-align: center; z-index: 9999;";
+						errorDiv.innerHTML = "你不是对的人";
+						document.body.appendChild(errorDiv);
+						// 使用打字机效果显示错误信息
+						setTimeout(function() {
+							$(errorDiv).typewriter();
+						}, 100);
+					}
+				} else {
+					// 如果用户取消输入，也显示错误信息
+					document.getElementById("main").style.display = "none";
+					var errorDiv = document.createElement("div");
+					errorDiv.id = "password-error";
+					errorDiv.style.cssText = "position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 24px; color: #ff0000; text-align: center; z-index: 9999;";
+					errorDiv.innerHTML = "你不是对的人";
+					document.body.appendChild(errorDiv);
+					setTimeout(function() {
+						$(errorDiv).typewriter();
+					}, 100);
+				}
+			}
+		</script>
+	</head>
+
+	<body>
+		<audio autoplay="autopaly" loop="loop">
+	<source src="renxi.mp3" type="audio/mp3" /></audio>
+		<div id="main" style="display: none;">
+			<div id="error">本页面采用HTML5编辑，目前您的浏览器无法显示，请换成谷歌(<a href="http://www.google.cn/chrome/intl/zh-CN/landing_chrome.html?hl=zh-CN&brand=CHMI">Chrome</a>)或者火狐(<a href="http://firefox.com.cn/download/">Firefox</a>)浏览器，或者其他游览器的最新版本。</div>
+			<div id="wrap">
+				<div id="text">
+					<div id="code">
+						<font color="black" size="3"><b><i>
+						<span class="say">-- CLOVER--</span><br>
+						<span class="say"> </span><br>
+						<div class="bilingual">
+							<span class="english-large">My world was monochrome, a silent, endless scene.</span><br>
+							<span class="chinese-small">我的世界原本是黑白默片</span>
+						</div>
+						<span class="say"> </span><br>
+						<div class="bilingual">
+							<span class="english-large">You lit the fire in my heart, a rhythm raw and keen.</span><br>
+							<span class="chinese-small">心跳的鼓点因你而变得热烈</span>
+						</div>
+						<span class="say"> </span><br>
+						<div class="bilingual">
+							<span class="english-large">Here with you is the only future I desire or chase.</span><br>
+							<span class="chinese-small">唯一想要的未来，是与你有关的一切</span>
+						</div>
+						<span class="say"> </span><br>
+						<div class="bilingual">
+							<span class="english-large">In you, I find my color, light, and every storyline's grace.</span><br>
+							<span class="chinese-small">你是光芒，是色彩，是我全部的情节</span>
+						</div>
+						<span class="say"> </span><br>
+						<span class="say"> -- SARZN--</span>
+						</i></b>
+						</font>
+					</div>
+				</div>
+				<div id="clock-box">
+					<span><font color="#666666"><span class="ai" >亲爱的 </span>，我爱你已是</font></span>
+					<div id="clock"></div>
+				</div>
+				<canvas id="canvas" width="1100" height="680"></canvas>
+			</div>
+		</div>
+		<script>
+			(function() {
+				var canvas = $('#canvas');
+				if (!canvas[0].getContext) {
+					$("#error").show();
+					return false;
+				}
+				var width = canvas.width();
+				var height = canvas.height();
+				canvas.attr("width", width);
+				canvas.attr("height", height);
+				var opts = {
+					seed: {
+						x: width / 2 - 20,
+						color: "rgb(190, 26, 37)",
+						scale: 2
+					},
+					branch: [
+						[535, 680, 570, 250, 500, 200, 30, 100, [
+							[540, 500, 455, 417, 340, 400, 13, 100, [
+								[450, 435, 434, 430, 394, 395, 2, 40]
+							]],
+							[550, 445, 600, 356, 680, 345, 12, 100, [
+								[578, 400, 648, 409, 661, 426, 3, 80]
+							]],
+							[539, 281, 537, 248, 534, 217, 3, 40],
+							[546, 397, 413, 247, 328, 244, 9, 80, [
+								[427, 286, 383, 253, 371, 205, 2, 40],
+								[498, 345, 435, 315, 395, 330, 4, 60]
+							]],
+							[546, 357, 608, 252, 678, 221, 6, 100, [
+								[590, 293, 646, 277, 648, 271, 2, 80]
+							]]
+						]]
+					],
+					bloom: {
+						num: 700,
+						width: 1080,
+						height: 650,
+					},
+					footer: {
+						width: 1200,
+						height: 5,
+						speed: 10,
+					}
+				};
+				var tree = new Tree(canvas[0], width, height, opts);
+				var seed = tree.seed;
+				var foot = tree.footer;
+				var hold = 1;
+				// 点击整个页面触发动画
+				$(document).click(function(e) {
+					if (hold) {
+						hold = 0;
+						$(document).unbind("click");
+						canvas.unbind("mousemove");
+						canvas.removeClass('hand');
+					}
+				});
+				
+				// 保持原有的悬停效果在画布上
+				canvas.mousemove(function(e) {
+					var offset = canvas.offset(),
+						x, y;
+					x = e.pageX - offset.left;
+					y = e.pageY - offset.top;
+					// 扩大悬停区域：包含整个爱心和文字区域
+					var seedX = width / 2 - 20;
+					var seedY = height - 100; // 爱心大致位置
+					var hoverRadius = 150; // 扩大悬停半径
+					
+					// 计算悬停点与爱心中心的距离
+					var distance = Math.sqrt(Math.pow(x - seedX, 2) + Math.pow(y - seedY, 2));
+					
+					canvas.toggleClass('hand', seed.hover(x, y) || distance < hoverRadius);
+				});
+				var seedAnimate = eval(Jscex.compile("async", function() {
+					seed.draw();
+					while (hold) {
+						$await(Jscex.Async.sleep(10));
+					}
+					while (seed.canScale()) {
+						seed.scale(0.95);
+						$await(Jscex.Async.sleep(10));
+					}
+					while (seed.canMove()) {
+						seed.move(0, 2);
+						foot.draw();
+						$await(Jscex.Async.sleep(10));
+					}
+				}));
+				var growAnimate = eval(Jscex.compile("async", function() {
+					do {
+						tree.grow();
+						$await(Jscex.Async.sleep(10));
+					}
+					while (tree.canGrow());
+				}));
+				var flowAnimate = eval(Jscex.compile("async", function() {
+					do {
+						tree.flower(2);
+						$await(Jscex.Async.sleep(10));
+					}
+					while (tree.canFlower());
+				}));
+				var moveAnimate = eval(Jscex.compile("async", function() {
+					tree.snapshot("p1", 240, 0, 610, 680);
+					while (tree.move("p1", 500, 0)) {
+						foot.draw();
+						$await(Jscex.Async.sleep(10));
+					}
+					foot.draw();
+					tree.snapshot("p2", 500, 0, 610, 680);
+					canvas.parent().css("background", "url(" + tree.toDataURL('image/png') + ")");
+					canvas.css("background", "#ffe");
+					$await(Jscex.Async.sleep(300));
+					canvas.css("background", "none");
+				}));
+				var jumpAnimate = eval(Jscex.compile("async", function() {
+					var ctx = tree.ctx;
+					while (true) {
+						tree.ctx.clearRect(0, 0, width, height);
+						tree.jump();
+						foot.draw();
+						$await(Jscex.Async.sleep(25));
+					}
+				}));
+				var textAnimate = eval(Jscex.compile("async", function() {
+					var together = new Date();
+					together.setFullYear(2025, (9 - 1), (27 - 1));
+					together.setHours(4);
+					together.setMinutes(4);
+					together.setSeconds(0);
+					together.setMilliseconds(0);
+					$("#code").show().typewriter();
+					$("#clock-box").fadeIn(500);
+					while (true) {
+						timeElapse(together);
+						$await(Jscex.Async.sleep(1000));
+					}
+				}));
+				var runAsync = eval(Jscex.compile("async", function() {
+					$await(seedAnimate());
+					$await(growAnimate());
+					$await(flowAnimate());
+					$await(moveAnimate());
+					textAnimate().start();
+					$await(jumpAnimate());
+				}));
+				runAsync().start();
+			})();
+		</script>
+	</body>
+
+</html>
