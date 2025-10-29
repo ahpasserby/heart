@@ -1,3 +1,3 @@
 # 爱心树表白
 示范：
-[https://xfbxfbxfb.github.io/love/](https://ahpasserby.github.io/heart/)
+https://ahpasserby.github.io/heart/
